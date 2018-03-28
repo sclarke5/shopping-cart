@@ -14,6 +14,10 @@ class Product
     return new_product
   end
 
+  def name
+    @name
+  end
+
   def self.all
     @@products
   end
@@ -31,8 +35,8 @@ product1 = Product.create('banana', 2.50)
 product2 = Product.create('apple', 2.00)
 product3 = Product.create('yogurt', 28.00)
 
-puts Product.all.inspect
-
+# puts Product.all.inspect
+#
 p product3.total_price
-
-p
+#
+# p Product.all
